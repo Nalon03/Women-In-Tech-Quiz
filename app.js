@@ -1,6 +1,7 @@
 const corretAnswers = ['A','A','B','A','B','B','B','B','B','B'];
 const form = document.querySelector('.quiz-form');
 const result = document.querySelector('.result');
+//const checkColor = document.querySelector('.form-check-label')
 
 form.addEventListener('submit', e =>{
     e.preventDefault();
@@ -12,7 +13,7 @@ form.addEventListener('submit', e =>{
     userAnswers.forEach((answer,index) => {
         if(answer === corretAnswers[index])
         {
-            score += 25;
+            score += 10;
         }
     });
 
@@ -30,6 +31,7 @@ form.addEventListener('submit', e =>{
         output++;
     }
    },10);
+  
 });
 
 
